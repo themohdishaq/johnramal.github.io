@@ -1,6 +1,7 @@
 from flask import Flask, request, redirect, url_for, render_template_string, flash
 import smtplib
 from email.mime.text import MIMEText
+import os
 
 app = Flask(__name__)
 app.secret_key = '7c9d8a0f6b4e7a8fcd2e6a90b1d2e6a8'  # Set your secret key here
@@ -58,4 +59,6 @@ def send_email():
     return redirect(redirect_url)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # Read the port from the environment variable, default to 5000 if not set
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=True)
