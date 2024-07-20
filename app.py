@@ -1,9 +1,11 @@
 from flask import Flask, request, redirect, url_for, render_template_string, flash
+from flask_cors import CORS
 import smtplib
 from email.mime.text import MIMEText
 import os
 
 app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
 app.secret_key = '7c9d8a0f6b4e7a8fcd2e6a90b1d2e6a8'  # Set your secret key here
 
 # Replace these with your email server settings
