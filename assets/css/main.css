@@ -223,6 +223,9 @@ input, select, textarea {
 	h6 {
 		font-size: 0.8rem;
 	}
+	.small-font {
+		font-size: 0.8rem; 
+	}
 
 	sub {
 		font-size: 0.8rem;
