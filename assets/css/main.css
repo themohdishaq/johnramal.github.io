@@ -4698,3 +4698,33 @@ input, select, textarea {
 	.small-placeholder::placeholder {
 		font-size: 0.9em; /* Adjust placeholder text size */
 	}
+	.table-wrapper {
+		overflow-x: auto; /* Ensures the table is scrollable on smaller screens */
+	}
+	
+	table.alt {
+		width: 100%;
+		border-collapse: collapse;
+		margin-bottom: 20px; /* Adds space below the table */
+	}
+	
+	table.alt th, table.alt td {
+		padding: 8px;
+		text-align: left;
+		border: 1px solid #ddd;
+	}
+	
+	table.alt th {
+		background-color: #f4f4f4;
+		font-weight: bold;
+	}
+	
+	table.alt a {
+		color: #1e90ff;
+		text-decoration: none;
+	}
+	
+	table.alt a:hover {
+		text-decoration: underline;
+	}
+	
