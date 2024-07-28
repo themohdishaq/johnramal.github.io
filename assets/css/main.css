@@ -3758,73 +3758,78 @@ input, select, textarea {
 
 /* Main */
 
-	#main {
-		background-color: #ffffff;
-		position: relative;
-		margin: 0 auto;
-		width: calc(100% - 4rem);
-		max-width: 72rem;
-		z-index: 2;
+#main {
+	background-color: #ffffff;
+	position: relative;
+	margin: 0 auto;
+	width: calc(100% - 4rem);
+	max-width: 72rem;
+	z-index: 2;
+}
+
+#main > * {
+	padding: 4rem 4rem 2rem 4rem;
+	border-top: solid 2px #eeeeee;
+	margin: 0;
+}
+
+#main > *:first-child {
+	border-top: 0;
+}
+
+/* Remove border and adjust padding for .posts section */
+#main > .posts {
+	border-top: 0;
+	padding-top: 1rem; /* Adjust padding as needed */
+}
+
+#main > footer {
+	text-align: center;
+}
+
+#main > .post {
+	padding: 8rem 8rem 2rem 8rem; /* Adjusted bottom padding */
+}
+
+#main > .post header.major > .date {
+	margin-top: -2rem;
+}
+
+#main > .post header.major > h1,
+#main > .post header.major h2 {
+	font-size: 4rem;
+	line-height: 1.1;
+	margin: 0 0 2rem 0;
+}
+
+#main > .post.featured {
+	text-align: center;
+}
+
+@media screen and (max-width: 1280px) {
+	#main > .post {
+		padding: 6rem 4rem 2rem 4rem; /* Adjusted bottom padding */
+	}
+}
+
+@media screen and (max-width: 736px) {
+	#main > .post {
+		padding: 4rem 2rem 1rem 2rem; /* Adjusted bottom padding */
+	}
+	
+	#main > .post header.major > .date {
+		margin-top: -1rem;
+		margin-bottom: 2rem;
 	}
 
-		#main > * {
-			padding: 4rem 4rem 2rem 4rem ;
-			border-top: solid 2px #eeeeee;
-			margin: 0;
-		}
+	#main > .post header.major > h1,
+	#main > .post header.major h2 {
+		font-size: 2.5rem;
+		line-height: 1.2;
+		margin: 0 0 1.5rem 0;
+	}
+}
 
-			#main > *:first-child {
-				border-top: 0;
-			}
-
-		#main > footer {
-			text-align: center;
-		}
-
-		#main > .post {
-			padding: 8rem 8rem 6rem 8rem ;
-		}
-
-			#main > .post header.major > .date {
-				margin-top: -2rem;
-			}
-
-			#main > .post header.major > h1, #main > .post header.major h2 {
-				font-size: 4rem;
-				line-height: 1.1;
-				margin: 0 0 2rem 0;
-			}
-
-			#main > .post.featured {
-				text-align: center;
-			}
-
-			@media screen and (max-width: 1280px) {
-
-				#main > .post {
-					padding: 6rem 4rem 4rem 4rem ;
-				}
-
-			}
-
-			@media screen and (max-width: 736px) {
-
-				#main > .post {
-					padding: 4rem 2rem 2rem 2rem ;
-				}
-
-					#main > .post header.major > .date {
-						margin-top: -1rem;
-						margin-bottom: 2rem;
-					}
-
-					#main > .post header.major > h1, #main > .post header.major h2 {
-						font-size: 2.5rem;
-						line-height: 1.2;
-						margin: 0 0 1.5rem 0;
-					}
-
-			}
 
 		#main > .posts {
 			display: -moz-flex;
@@ -4727,4 +4732,63 @@ input, select, textarea {
 	table.alt a:hover {
 		text-decoration: underline;
 	}
+	.card {
+		border: 1px solid #ddd;
+		border-radius: 10px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		overflow: hidden;
+		margin: 20px 0;
+		transition: transform 0.2s;
+	}
+	
+	.card:hover {
+		transform: scale(1.03);
+	}
+	
+	.card header {
+		padding: 15px;
+		background: transparent; /* Remove background color */
+		border-bottom: 1px solid #ddd; /* Add border to separate header from content */
+	}
+	
+	.card header .date {
+		font-size: 0.8em;
+		color: #888;
+	}
+	
+	.card .image {
+		max-height: 200px;
+		overflow: hidden;
+	}
+	
+	.card .image img {
+		width: 100%;
+		height: auto;
+	}
+	
+	.card p {
+		padding: 15px;
+	}
+	
+	.card .actions {
+		display: flex;
+		justify-content: center;
+		padding: 15px;
+		background: transparent; /* Remove background color */
+		border-top: 1px solid #ddd; /* Add border to separate actions from content */
+	}
+	
+	.card .actions .button {
+		display: flex; /* Use flexbox */
+		align-items: center; /* Center items vertically */
+		justify-content: center; /* Center items horizontally */
+		padding: 10px 20px;
+		color: #fff; /* Button text color */
+		border-radius: 5px; /* Rounded corners for buttons */
+		text-decoration: none; /* Remove underline from links */
+		transition: background 0.3s;
+		font-size: 1em; /* Ensure font size is appropriate */
+		border: none; /* Remove border from buttons */
+	}
+	
 	
