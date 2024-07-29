@@ -1,60 +1,315 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-		<title>learn</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+    <title>Learn Data Concepts</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        ul {
+            list-style: none; /* Remove default list item markers */
+            padding-left: 0;
+        }
+        
+        a {
+            text-decoration: none; /* Remove underline from links */
+            color: #070707; /* Set a custom link color */
+            transition: color 0.3s ease; /* Add transition for smooth color change */
+        }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        a:hover {
+            color: #005fa3; /* Change color on hover */
+        }
+        .gratitude-section {
+    padding: 40px 20px; /* Increased padding for better spacing */
+    background-color: #fff; /* Use a light background to blend with main content */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for separation */
+    margin-top: 30px;
+    max-width: 2200px; /* Ensure the section is wide enough */
+    margin-left: 30px;
+    margin-right: 30px;
+}
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Learn</a>
-					</header>
+.gratitude-section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 1.8em; /* Adjust font size */
+}
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li><a href="index.html">Data Pojects</a></li>
-							<li class="active"><a href="generic.html">learn</a></li>
-							<li><a href="elements.html">Personal Blog</a></li>
-							<li><a href="gallery.html">نگار خانہ</a></li>
+.tutor-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    gap: 20px; /* Space between items */
+    justify-content: center;
+}
 
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/johnramal" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkdIn</span></a></li>
-							<li><a href="https://www.instagram.com/johnailiaramal/" target="_blank" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="https://github.com/johnramal" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="https://www.datacamp.com/portfolio/johnailia51" target="_blank"  class="no-underline">DataCamp</a></li>
-						</ul>
-					</nav>
+.tutor {
+    display: flex;
+    align-items: center;
+    padding: 15px; /* Padding inside each tutor block */
+    border: 1px solid #ddd; /* Border for separation between tutors */
+    border-radius: 10px; /* Rounded corners for better look */
+    background-color: #f9f9f9; /* Background color for each tutor block */
+    font-size: 0.9em; /* Smaller font size */
+}
 
-				<!-- Main -->
-					<div id="main">
+.tutor img {
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 3px solid #ddd; /* Border around image for better separation */
+    width: 100px; /* Adjust image size for consistency */
+    height: 100px;
+}
 
-						<!-- Post -->
-							<section class="post">
-								<header class="major">
-									<h1>Get intuitive understanding of data concepts</h1>
-									<p>This nerd will judge you if your missinterpret confidence intervals.</p>
-								</header>
-								<div class="image main"><img src="images/nerdpussy.jpg" alt="" /></div>
-								<p>Untill i add content the cat above will judge you if you missinterpret confidence interval</p>
-							</section>
+.tutor .info {
+    flex: 1;
+}
 
-					</div>
+.tutor .info a {
+    font-size: 1.1em; /* Adjust font size */
+    color: #007acc;
+    display: block;
+    margin-bottom: 5px;
+}
 
-				<!-- Footer -->
+.tutor .info a:hover {
+    color: #005fa3;
+}
+
+.tutor .info p {
+    margin: 0;
+    color: #555;
+}
+
+    </style>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">Learn</a>
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="index.html">Data Projects</a></li>
+                <li class="active"><a href="generic.html">Learn</a></li>
+                <li><a href="elements.html">Personal Blog</a></li>
+                <li><a href="gallery.html">نگار خانہ</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/johnramal" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://www.instagram.com/johnailiaramal/" target="_blank" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="https://github.com/johnramal" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="https://www.datacamp.com/portfolio/johnailia51" target="_blank" class="no-underline">DataCamp</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Featured Post -->
+            <article class="post featured">
+                <header class="major">
+                    <h2>Learn Data Concepts</h2>
+                    <p>I will try to give intuitive understanding of data concepts as deep as possible</p>
+                </header>
+            </article>
+    
+            <!-- Posts -->
+            <section class="posts">
+                <article class="card">
+                    <header>
+                        <h2>Probability and Statistics</h2>
+                    </header>
+                    <ul>
+                        <li class="card">
+                            <h3>Descriptive Statistics</h3>
+                            <ul>
+                                <li><a href="#">Measures of Central Tendency</a></li>
+                                <li><a href="#">Measures of Dispersion</a></li>
+                            </ul>
+                        </li>
+                        <li class="card">
+                            <h3>Probability</h3>
+                            <ul>
+                                <li><a href="#">Basic Probability Concepts</a></li>
+                                <li><a href="#">Probability Distributions</a></li>
+                            </ul>
+                        </li>
+                        <li class="card">
+                            <h3>Inferential Statistics</h3>
+                            <ul>
+                                <li><a href="#">Sampling Methods</a></li>
+                                <li><a href="#">Hypothesis Testing</a></li>
+                                <li><a href="#">Confidence Intervals</a></li>
+                            </ul>
+                        </li>
+                        <li class="card">
+                            <h3>Regression Analysis</h3>
+                            <ul>
+                                <li><a href="#">Simple Linear Regression</a></li>
+                                <li><a href="#">Multiple Linear Regression</a></li>
+                                <li><a href="#">Logistic Regression</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <header>
+                        <h2>Data Science Programming</h2>
+                    </header>
+                    <ul>
+                        <li class="card">
+                            <h3>SQL</h3>
+                            <ul>
+                                <li><a href="#">Basics of SQL Queries</a></li>
+                                <li><a href="#">Data Manipulation with SQL</a></li>
+                                <li><a href="#">Joins, Subqueries, and Indexing</a></li>
+                                <li><a href="#">Advanced SQL Techniques (CTEs, Window Functions)</a></li>
+                            </ul>
+                        </li>
+                        <li class="card">
+                            <h3>Python for Data Science</h3>
+                            <ul>
+                                <li><a href="#">Python Basics</a></li>
+                                <li><a href="#">Data Manipulation with Pandas</a></li>
+                                <li><a href="#">Data Visualization with Matplotlib and Seaborn</a></li>
+                                <li><a href="#">Machine Learning with Scikit-Learn</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <header>
+                        <h2>Machine Learning and AI</h2>
+                    </header>
+                    <ul>
+                        <li class="card">
+                            <h3>Fundamentals of Machine Learning</h3>
+                            <ul>
+                                <li><a href="#">Supervised vs. Unsupervised Learning</a></li>
+                                <li><a href="#">Model Evaluation and Validation</a></li>
+                            </ul>
+                        </li>
+                        <li class="card">
+                            <h3>Supervised Learning</h3>
+                            <ul>
+                                <li><a href="#">Regression Algorithms</a></li>
+                                <li><a href="#">Classification Algorithms</a></li>
+                            </ul>
+                        </li>
+                        <li class="card">
+                            <h3>Unsupervised Learning</h3>
+                            <ul>
+                                <li><a href="#">Clustering Algorithms</a></li>
+                                <li><a href="#">Dimensionality Reduction</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <header>
+                        <h2>Applied Analytics</h2>
+                    </header>
+                    <ul>
+                        <li class="card">
+                            <h3>Business Analytics</h3>
+                            <ul>
+                                <li><a href="#">Customer Segmentation</a></li>
+                                <li><a href="#">Sales Forecasting</a></li>
+                                <li><a href="#">Market Basket Analysis</a></li>
+                                <li><a href="#">Churn Prediction</a></li>
+                            </ul>
+                        </li>
+                        <li class="card">
+                            <h3>Marketing Analytics</h3>
+                            <ul>
+                                <li><a href="#">Campaign Effectiveness</a></li>
+                                <li><a href="#">Sentiment Analysis</a></li>
+                                <li><a href="#">Customer Lifetime Value (CLV) Prediction</a></li>
+                                <li><a href="#">Digital Marketing Metrics</a></li>
+                            </ul>
+                        </li>
+                        <li class="card">
+                            <h3>Supply Chain Analytics</h3>
+                            <ul>
+                                <li><a href="#">Inventory Management</a></li>
+                                <li><a href="#">Demand Forecasting</a></li>
+                                <li><a href="#">Logistics Optimization</a></li>
+                                <li><a href="#">Supplier Performance Evaluation</a></li>
+                            </ul>
+                        </li>
+                        <li class="card">
+                            <h3>Social Media Analytics</h3>
+                            <ul>
+                                <li><a href="#">Sentiment Analysis</a></li>
+                                <li><a href="#">Influencer Identification</a></li>
+                                <li><a href="#">Trend Analysis</a></li>
+                                <li><a href="#">Engagement Metrics</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+             <!-- Gratitude Section -->
+             <section class="gratitude-section">
+                <h2>Gratitude to YouTube Tutors</h2>
+                <div class="tutor-container">
+                    <div class="tutor">
+                        <img src="path/to/tutor1.jpg" alt="Tutor 1">
+                        <div class="info">
+                            <a href="https://www.youtube.com/channel/UCtutor1" target="_blank">Tutor 1</a>
+                            <p>Expert in Probability and Statistics. Provides clear and engaging tutorials on these fundamental concepts.</p>
+                        </div>
+                    </div>
+                    <div class="tutor">
+                        <img src="path/to/tutor2.jpg" alt="Tutor 2">
+                        <div class="info">
+                            <a href="https://www.youtube.com/channel/UCtutor2" target="_blank">Tutor 2</a>
+                            <p>Known for in-depth tutorials on Data Science and Machine Learning. Great resource for advanced topics.</p>
+                        </div>
+                    </div>
+                    <div class="tutor">
+                        <img src="path/to/tutor3.jpg" alt="Tutor 3">
+                        <div class="info">
+                            <a href="https://www.youtube.com/channel/UCtutor3" target="_blank">Tutor 3</a>
+                            <p>Provides easy-to-follow explanations on Data Analysis techniques and Python programming.</p>
+                        </div>
+                    </div>
+                    <div class="tutor">
+                        <img src="path/to/tutor4.jpg" alt="Tutor 4">
+                        <div class="info">
+                            <a href="https://www.youtube.com/channel/UCtutor4" target="_blank">Tutor 4</a>
+                            <p>Excellent resource for learning SQL and Data Visualization. Offers practical insights and hands-on examples.</p>
+                        </div>
+                    </div>
+                    <div class="tutor">
+                        <img src="path/to/tutor5.jpg" alt="Tutor 5">
+                        <div class="info">
+                            <a href="https://www.youtube.com/channel/UCtutor5" target="_blank">Tutor 5</a>
+                            <p>Focuses on advanced Machine Learning and AI topics with detailed tutorials and case studies.</p>
+                        </div>
+                    </div>
+                    <div class="tutor">
+                        <img src="path/to/tutor6.jpg" alt="Tutor 6">
+                        <div class="info">
+                            <a href="https://www.youtube.com/channel/UCtutor6" target="_blank">Tutor 6</a>
+                            <p>Provides comprehensive guides on statistical analysis and programming languages used in Data Science.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+       <!-- Footer -->
 					<footer id="footer">
 						<section>
 							<form method="post" action="https://johnramal-github-io-1.onrender.com/send">
@@ -105,21 +360,21 @@
 						</section>
 					</footer>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+        <!-- Copyright -->
+        <div id="copyright">
+            <ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+        </div>
 
-			</div>
+    </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
-	</body>
+</body>
 </html>
