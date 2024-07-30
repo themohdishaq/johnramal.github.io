@@ -4815,7 +4815,7 @@ input, select, textarea {
   
   .team-member.card {
 	position: relative;
-	width: 300px;
+	width: 280px;
 	text-align: center;
 	background: #fff;
 	border-radius: 10px;
@@ -4830,9 +4830,11 @@ input, select, textarea {
   
   .team-member img {
 	width: 100%;
-	border-radius: 50%;
+	border-radius: 2%;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 	transition: box-shadow 0.3s;
+	height: 300px;
+	width: 200px;
   }
   
   .team-member img:hover {
