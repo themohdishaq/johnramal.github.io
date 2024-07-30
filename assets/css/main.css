@@ -3609,7 +3609,7 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
-		color: #ffffff;
+		color: #ebebeb;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3626,7 +3626,7 @@ input, select, textarea {
 		padding: 0 2rem 0 0;
 		position: relative;
 		width: calc(100% - 4rem);
-		max-width: 72rem;
+		max-width: 95rem;
 		z-index: 2;
 	}
 
@@ -3763,7 +3763,7 @@ input, select, textarea {
 	position: relative;
 	margin: 0 auto;
 	width: calc(100% - 4rem);
-	max-width: 72rem;
+	max-width: 95rem;
 	z-index: 2;
 }
 
@@ -3967,7 +3967,7 @@ input, select, textarea {
 		position: relative;
 		margin: 0 auto;
 		width: calc(100% - 4rem);
-		max-width: 72rem;
+		max-width: 95rem;
 		z-index: 2;
 	}
 
@@ -4733,7 +4733,7 @@ input, select, textarea {
 		text-decoration: underline;
 	}
 	.card {
-		border: 1px solid #ddd;
+		border: 2px solid #ddd;
 		border-radius: 10px;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 		overflow: hidden;
