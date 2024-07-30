@@ -4810,12 +4810,12 @@ input, select, textarea {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap: 20px;
+	gap: 10px;
   }
   
   .team-member.card {
 	position: relative;
-	width: 250px;
+	width: 300px;
 	text-align: center;
 	background: #fff;
 	border-radius: 10px;
