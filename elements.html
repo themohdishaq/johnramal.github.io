@@ -13,6 +13,60 @@
       <noscript>
          <link rel="stylesheet" href="assets/css/noscript.css" />
       </noscript>
+      <style>
+         /* Additional styles for new elements */
+         .card {
+         background-color: #ffffff;
+         border-radius: 0.5rem;
+         padding: 1.5rem;
+         margin-bottom: 1.5rem;
+         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+         }
+         .btn {
+         display: inline-block;
+         padding: 0.5rem 1rem;
+         background-color: #3498db;
+         color: white;
+         text-decoration: none;
+         border-radius: 0.25rem;
+         transition: background-color 0.3s ease;
+         }
+         .btn:hover {
+         background-color: #2980b9;
+         }
+         .modal {
+         display: none;
+         position: fixed;
+         z-index: 1000;
+         left: 0;
+         top: 0;
+         width: 100%;
+         height: 100%;
+         overflow: auto;
+         background-color: rgba(0,0,0,0.4);
+         }
+         .modal-content {
+         background-color: #fefefe;
+         margin: 15% auto;
+         padding: 20px;
+         border: 1px solid #888;
+         width: 80%;
+         max-width: 600px;
+         border-radius: 0.5rem;
+         }
+         .close {
+         color: #aaa;
+         float: right;
+         font-size: 28px;
+         font-weight: bold;
+         }
+         .close:hover,
+         .close:focus {
+         color: black;
+         text-decoration: none;
+         cursor: pointer;
+         }
+      </style>
    </head>
    <body class="is-preload">
       <!-- Wrapper -->
@@ -43,86 +97,122 @@
             <header class="major">
                <h1>Exploring Ideas & Landscapes</h1>
             </header>
-            <!-- Text stuff -->
-            <h2>beyond data</h2>
-            <p>When I’m not crunching numbers, you might find me scouting out the best laptops, debating history’s greatest mysteries, diving into theological debates, or swimming like a fish.
-               I’m also known for my lightning-fast learning (and forgetting) abilities and my knack for making science sound cool. Join me as I share travel tales, personal insights, and the occasional mishap in the world of adventure!
-               <br>For controversial thoughts drop a follow request <a href="https://x.com/personaldiarya?s=08">بیاضِ ایلیاء (@personaldiarya)</a>.
-            </p>
-            <hr />
-            <header>
-               <h4><a href="article1.html">Heading with a Subtitle</a></h4>
-               <p>To be added soon</p>
-            </header>
-            <p>
-               <a href="article1.html">To be added soon</a>
-            </p>
-            <header>
-               <h4><a href="article2.html">Heading with a Subtitle</a></h4>
-               <p>To be added soon</p>
-            </header>
-            <p>
-               <a href="article2.html">To be added soon</a>
-            </p>
-            <header>
-               <h4><a href="article3.html">Heading with a Subtitle</a></h4>
-               <p>To be added soon</p>
-            </header>
-            <p>
-               <a href="article3.html">To be added soon</a>
-            </p>
-            <hr />
-            <h2>Anthropocene Reviewed</h2>
-            <div class="box">
-               <p>
-               <h3>ANTHROPOCENE</h3>
-               The Anthropocene concept, which claims that humans have become the planet’s top environmental influencers,
-               strikes me as a classic case of humans overestimating their importance. It's like saying we're the stars of Earth’s reality show,
-               despite the fact that many of us are more like background extras. This idea gets 2 stars from me—one for trying to give us a starring role in Earth’s history and an extra one for its sheer audacity. As I dive into the nitty-gritty of the Anthropocene, expect me to rate various elements with the same blend of skepticism and humor,
-               because while the core concept might be a bit too self-congratulatory, some aspects might still make for a good laugh or thoughtful reflection.</p>
-            </div>
-            <!-- Lists -->
-            <h3>Last Five</h3>
-            <div class="row box">
-               <div class="col-4">
-                  <h4>Books</h4>
-                  <ul class="small-font">
-                     <li>After the Prophet</li>
-                     <li>Verity</li>
-                     <li>Fallen Leaves</li>
-                     <li>Song of Achilles</li>
-                     <li>Wuthering Heights</li>
-                  </ul>
-               </div>
-               <div class="col-4">
-                  <h4>Tops</h4>
-                  <ul class="small-font">
-                     <li>Hacchindar</li>
-                     <li>Baskochi</li>
-                     <li>Bubuli Mo Tin</li>
-                     <li>Taghafari</li>
-                     <li>Charsu</li>
-                  </ul>
-               </div>
-               <div class="col-4">
-                  <h4>Movies/TV</h4>
-                  <ul class="small-font">
-                     <li>House of the Dragon</li>
-                     <li>Bojack Horseman</li>
-                     <li>Gone Girl</li>
-                     <li>Chernobyl</li>
-                     <li>Oppenheimer</li>
-                  </ul>
-               </div>
+            <div>
+               <h2>Beyond Data</h2>
+               <p>When I'm not crunching numbers, you might find me scouting out the best laptops for friends, discussing most random topics, diving into theological debates, or swimming like a fish. Known for my lightning-fast learning (and forgetting) abilities and my knack for making science sound cool. <br> For controversial opinions and rants drop a follow request <a href="https://x.com/personaldiarya?s=08">بیاضِ ایلیاء (@personaldiarya)</a></p>
+               <h3>Sections</h3>
+               <ul>
+                  <li><strong>Anthropocene Reviewed:</strong> I rate things here on a scale without an upper limit, lower being -1.</li>
+                  <li><strong>Couplets and Explanations:</strong> Explain greatest Urdu couplets</li>
+                  <li><strong>Last Five Tops:</strong> My activity.</li>
+               </ul>
             </div>
             <hr />
+            <div class="card">
+               <h2>Anthropocene Reviewed</h2>
+               <div id="anthropoceneTopics">
+                  <div class="topic active">
+                     <h3>ANTHROPOCENE</h3>
+                     <p>The Anthropocene concept, which claims that humans have become the planet's top environmental influencers, strikes me as a classic case of humans overestimating their importance. It's like saying we're the stars of Earth's reality show, despite the fact that many of us are more like background extras. This idea gets 2 stars from me—one for trying to give us a starring role in Earth's history and an extra one for its sheer audacity.</p>
+                  </div>
+                  <div class="topic">
+                     <h3>SOCIAL MEDIA</h3>
+                     <p>Social media: the digital playground where we pretend our lives are perfect and judge others based on their highlight reels. It's like a never-ending high school reunion, but with better filters. I give it 3 stars – one for connecting us globally, one for providing endless cat videos, and one for giving us the ability to mute that annoying relative during election season.</p>
+                  </div>
+                  <!-- Add more topics here -->
+               </div>
+               <div class="actions">
+                  <a href="#" id="prevTopic" class="button">Previous Topic</a>
+                  <a href="#" id="nextTopic" class="button">Next Topic</a>
+               </div>
+            </div>
             <!-- Review -->
-            <h3>Couplet of the day</h3>
-            <blockquote>
-               زیست  سے  تنگ ہو اے داغؔ تو جیتے کیوں ہو <br>
-               جان پیاری بھی نہیں جان سے جاتے بھی نہیں  <br>&mdash; داغؔ دہلوی
-            </blockquote>
-            <hr />
+            <div class="card">
+               <h2 style="text-align: center;">عرض کیا ہے</h2>
+               <div id="couplets">
+                  <div class="couplet active">
+                     <blockquote>
+                        زیست  سے  تنگ ہو اے داغؔ تو جیتے کیوں ہو <br>
+                        جان پیاری بھی نہیں جان سے جاتے بھی نہیں  <br>
+                        داغؔ دہلوی
+                     </blockquote>
+                     <a href="#" class="button explainCouplet" data-couplet="1">Explain Couplet</a>
+                  </div>
+                  <div class="couplet">
+                     <blockquote>
+                        ہم کو ان سے وفا کی ہے امید<br>
+                        جو نہیں جانتے وفا کیا ہے<br>
+                        مرزا غالب
+                     </blockquote>
+                     <a href="#" class="button explainCouplet" data-couplet="2">Explain Couplet</a>
+                  </div>
+               </div>
+               <div class="actions">
+                  <a href="#" id="prevCouplet" class="button">Previous Couplet</a>
+                  <a href="#" id="nextCouplet" class="button">Next Couplet</a>
+               </div>
+            </div>
+            <!-- ... (rest of the body content remains the same) ... -->
+            <!-- Couplet Explanation Modals -->
+            <div id="coupletModal1" class="modal">
+               <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h2>Couplet Explanation</h2>
+                  <p id="coupletExplanation1">
+                     This couplet, written by Daagh Dehlvi, reflects on the paradox of existence. It can be translated as:
+                     "O Daagh, if you're tired of life, why do you continue living?
+                     Life isn't dear to you, yet you don't depart from it either."
+                     The poet questions the human tendency to cling to life even when it becomes burdensome, highlighting the complex relationship between suffering and the will to live.
+                  </p>
+               </div>
+            </div>
+            <div id="coupletModal2" class="modal">
+               <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h2>Couplet Explanation</h2>
+                  <p id="coupletExplanation2">
+                     This couplet by Mirza Ghalib can be translated as:
+                     "We hope for loyalty from those
+                     Who don't even know what loyalty is."
+                     Ghalib is expressing the irony and perhaps futility of expecting faithfulness or loyalty from someone who doesn't understand or value these concepts. It's a commentary on misplaced expectations in relationships and the pain that can result from them.
+                  </p>
+               </div>
+            </div>
+            <div class="card">
+               <h2>Last Five</h2>
+               <div class="row">
+                  <div class="col-4">
+                     <h3>Books</h3>
+                     <ul>
+                        <li>After the Prophet</li>
+                        <li>Verity</li>
+                        <li>Fallen Leaves</li>
+                        <li>Song of Achilles</li>
+                        <li>Wuthering Heights</li>
+                     </ul>
+                  </div>
+                  <div class="col-4">
+                     <h3>Tops</h3>
+                     <ul>
+                        <li>Hacchindar</li>
+                        <li>Baskochi</li>
+                        <li>Bubuli Mo Tin</li>
+                        <li>Taghafari</li>
+                        <li>Charsu</li>
+                     </ul>
+                  </div>
+                  <div class="col-4">
+                     <h3>Movies/TV</h3>
+                     <ul>
+                        <li>House of the Dragon</li>
+                        <li>Bojack Horseman</li>
+                        <li>Gone Girl</li>
+                        <li>Chernobyl</li>
+                        <li>Oppenheimer</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
          </div>
          <!-- Footer -->
          <footer id="footer">
@@ -191,5 +281,84 @@
       <script src="assets/js/breakpoints.min.js"></script>
       <script src="assets/js/util.js"></script>
       <script src="assets/js/main.js"></script>
+      <script>
+         // JavaScript for interactive elements
+         document.addEventListener('DOMContentLoaded', function() {
+             // Anthropocene Topics
+             const anthropoceneTopics = document.querySelectorAll('#anthropoceneTopics .topic');
+             let currentTopicIndex = 0;
+         
+             function showTopic(index) {
+                 anthropoceneTopics.forEach((topic, i) => {
+                     topic.classList.toggle('active', i === index);
+                     topic.style.display = i === index ? 'block' : 'none';
+                 });
+             }
+         
+             document.getElementById('prevTopic').addEventListener('click', function(e) {
+                 e.preventDefault();
+                 currentTopicIndex = (currentTopicIndex - 1 + anthropoceneTopics.length) % anthropoceneTopics.length;
+                 showTopic(currentTopicIndex);
+             });
+         
+             document.getElementById('nextTopic').addEventListener('click', function(e) {
+                 e.preventDefault();
+                 currentTopicIndex = (currentTopicIndex + 1) % anthropoceneTopics.length;
+                 showTopic(currentTopicIndex);
+             });
+         
+             // Couplets
+             const couplets = document.querySelectorAll('#couplets .couplet');
+             let currentCoupletIndex = 0;
+         
+             function showCouplet(index) {
+                 couplets.forEach((couplet, i) => {
+                     couplet.classList.toggle('active', i === index);
+                     couplet.style.display = i === index ? 'block' : 'none';
+                 });
+             }
+         
+             document.getElementById('prevCouplet').addEventListener('click', function(e) {
+                 e.preventDefault();
+                 currentCoupletIndex = (currentCoupletIndex - 1 + couplets.length) % couplets.length;
+                 showCouplet(currentCoupletIndex);
+             });
+         
+             document.getElementById('nextCouplet').addEventListener('click', function(e) {
+                 e.preventDefault();
+                 currentCoupletIndex = (currentCoupletIndex + 1) % couplets.length;
+                 showCouplet(currentCoupletIndex);
+             });
+         
+             // Couplet explanation modals
+             const modals = document.querySelectorAll('.modal');
+             const explainButtons = document.querySelectorAll('.explainCouplet');
+             const closeButtons = document.querySelectorAll('.close');
+         
+             explainButtons.forEach(btn => {
+                 btn.onclick = function(e) {
+                     e.preventDefault();
+                     const modalId = 'coupletModal' + this.getAttribute('data-couplet');
+                     document.getElementById(modalId).style.display = 'block';
+                 }
+             });
+         
+             closeButtons.forEach(btn => {
+                 btn.onclick = function() {
+                     this.closest('.modal').style.display = 'none';
+                 }
+             });
+         
+             window.onclick = function(event) {
+                 if (event.target.classList.contains('modal')) {
+                     event.target.style.display = 'none';
+                 }
+             }
+         
+             // Initialize the first topic and couplet
+             showTopic(currentTopicIndex);
+             showCouplet(currentCoupletIndex);
+         });
+      </script>
    </body>
 </html>
