@@ -108,8 +108,20 @@
         font-size: 0.9em; /* Adjust font size for readability */
     }
 }
-
-
+.card-small {
+		border: 1px solid #ddd;
+		border-radius: 10px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		overflow: hidden;
+		background-color: #f9f9f9;
+		margin: 20px 0;
+		transition: transform 0.2s;
+	}
+	
+	.card-small:hover {
+		transform: scale(1.03);
+	}
+	
     </style>
 </head>
 <body class="is-preload">
@@ -156,21 +168,21 @@
                         <h2>Probability and Statistics</h2>
                     </header>
                     <ul>
-                        <li class="card">
+                        <li class="card-small">
                             <h3>Descriptive Statistics</h3>
                             <ul>
                                 <li><a href="#">Measures of Central Tendency</a></li>
                                 <li><a href="#">Measures of Dispersion</a></li>
                             </ul>
                         </li>
-                        <li class="card">
+                        <li class="card-small">
                             <h3>Probability</h3>
                             <ul>
                                 <li><a href="#">Basic Probability Concepts</a></li>
                                 <li><a href="#">Probability Distributions</a></li>
                             </ul>
                         </li>
-                        <li class="card">
+                        <li class="card-small">
                             <h3>Inferential Statistics</h3>
                             <ul>
                                 <li><a href="#">Sampling Methods</a></li>
@@ -178,7 +190,7 @@
                                 <li><a href="#">Confidence Intervals</a></li>
                             </ul>
                         </li>
-                        <li class="card">
+                        <li class="card-small">
                             <h3>Regression Analysis</h3>
                             <ul>
                                 <li><a href="#">Simple Linear Regression</a></li>
@@ -193,7 +205,7 @@
                         <h2>Data Science Programming</h2>
                     </header>
                     <ul>
-                        <li class="card">
+                        <li class="card-small">
                             <h3>SQL</h3>
                             <ul>
                                 <li><a href="#">Basics of SQL Queries</a></li>
@@ -202,7 +214,7 @@
                                 <li><a href="#">Advanced SQL Techniques (CTEs, Window Functions)</a></li>
                             </ul>
                         </li>
-                        <li class="card">
+                        <li class="card-small">
                             <h3>Python for Data Science</h3>
                             <ul>
                                 <li><a href="#">Python Basics</a></li>
@@ -218,21 +230,21 @@
                         <h2>Machine Learning and AI</h2>
                     </header>
                     <ul>
-                        <li class="card">
+                        <li class="card-small">
                             <h3>Fundamentals of Machine Learning</h3>
                             <ul>
                                 <li><a href="#">Supervised vs. Unsupervised Learning</a></li>
                                 <li><a href="#">Model Evaluation and Validation</a></li>
                             </ul>
                         </li>
-                        <li class="card">
+                        <li class="card-small">
                             <h3>Supervised Learning</h3>
                             <ul>
                                 <li><a href="#">Regression Algorithms</a></li>
                                 <li><a href="#">Classification Algorithms</a></li>
                             </ul>
                         </li>
-                        <li class="card">
+                        <li class="card-small">
                             <h3>Unsupervised Learning</h3>
                             <ul>
                                 <li><a href="#">Clustering Algorithms</a></li>
@@ -246,7 +258,7 @@
                         <h2>Applied Analytics</h2>
                     </header>
                     <ul>
-                        <li class="card">
+                        <li class="card-small">
                             <h3>Business Analytics</h3>
                             <ul>
                                 <li><a href="#">Customer Segmentation</a></li>
@@ -255,7 +267,7 @@
                                 <li><a href="#">Churn Prediction</a></li>
                             </ul>
                         </li>
-                        <li class="card">
+                        <li class="card-small">
                             <h3>Marketing Analytics</h3>
                             <ul>
                                 <li><a href="#">Campaign Effectiveness</a></li>
@@ -264,7 +276,7 @@
                                 <li><a href="#">Digital Marketing Metrics</a></li>
                             </ul>
                         </li>
-                        <li class="card">
+                        <li class="card-small">
                             <h3>Supply Chain Analytics</h3>
                             <ul>
                                 <li><a href="#">Inventory Management</a></li>
@@ -273,7 +285,7 @@
                                 <li><a href="#">Supplier Performance Evaluation</a></li>
                             </ul>
                         </li>
-                        <li class="card">
+                        <li class="card-small">
                             <h3>Social Media Analytics</h3>
                             <ul>
                                 <li><a href="#">Sentiment Analysis</a></li>
@@ -286,61 +298,61 @@
                 </article>
             </section>
              <!-- Gratitude Section -->
-             <section class="gratitude-section">
+             <section class="gratitude-section card">
                 <h2>Gratitude to YouTube Tutors</h2>
                  <p> I want to express my heartfelt gratitude to all the amazing YouTube tutors who have taught me fundamental concepts with such clarity and depth. Your intuitive explanations and engaging tutorials have made complex topics accessible and enjoyable. Thank you for your dedication and for making learning an enriching experience!</p>
                 <div class="tutor-container">
-                    <div class="tutor">
-                        <img src="https://yt3.googleusercontent.com/ytc/AIdro_nFzZFPLxPZRHcE3SSwzdrbuWqfoWYwLAu0_2iO6blQYAU=s176-c-k-c0x00ffffff-no-rj-mo" alt="Tutor 1">
+                    <div class="tutor card">
+                        <img src="https://yt3.googleusercontent.com/ytc/AIdro_nFzZFPLxPZRHcE3SSwzdrbuWqfoWYwLAu0_2iO6blQYAU=s176-c-k-c0x00ffffff-no-rj-mo" class="card" alt="Tutor 1">
                         <div class="info">
                             <a href="https://www.youtube.com/@3blue1brown" target="_blank">Grant Sanderson</a>
                             <p>The genius behind 3Blue1Brown, has an incredible knack for making math captivating. His intuitive explanations and stunning animations turned my math dread into love. With his engaging voice and imaginative approach, he brings math to life like no one else.</p>
                         </div>
                     </div>
-                    <div class="tutor">
-                        <img src="https://yt3.ggpht.com/cwJBNZUHoJL8HvoIfkULt2IgNu1LF7AL9cYDqSCTGWvG5lASV_y8LiHkMyVUm5Kqt03TLFUCSw=s176-c-k-c0x00ffffff-no-rj-mo" alt="Tutor 2">
+                    <div class="tutor card">
+                        <img src="https://yt3.ggpht.com/cwJBNZUHoJL8HvoIfkULt2IgNu1LF7AL9cYDqSCTGWvG5lASV_y8LiHkMyVUm5Kqt03TLFUCSw=s176-c-k-c0x00ffffff-no-rj-mo" class="card" alt="Tutor 2">
                         <div class="info">
                             <a href="https://www.youtube.com/@statquest" target="_blank">Josh Starmer</a>
                             <p>His use of clear, static visualizations helps break down intricate concepts into simple, digestible pieces.Starmer's approach builds understanding without oversimplifying, making the learning journey both insightful and enjoyable.   BAM!!!</p>
                         </div>
                     </div>
-                    <div class="tutor">
-                        <img src="https://yt3.googleusercontent.com/-3GzOAGf41SQRM-q6AfasmCc_WJIXg957ZSO86ohHjcNA7s4ELPlIB_rs9juhaeylEeHZizHAw=s160-c-k-c0x00ffffff-no-rj" alt="Tutor 3">
+                    <div class="tutor card">
+                        <img src="https://yt3.googleusercontent.com/-3GzOAGf41SQRM-q6AfasmCc_WJIXg957ZSO86ohHjcNA7s4ELPlIB_rs9juhaeylEeHZizHAw=s160-c-k-c0x00ffffff-no-rj" class="card" alt="Tutor 3">
                         <div class="info">
                             <a href="https://www.youtube.com/@very-normal" target="_blank">Christian</a>
                             <p>His "Very Normal" channel is a treasure trove for anyone looking to deepen their understanding of statistics. His intuitive approach to inferential hypothesis and his engaging teaching style have transformed my approach to statistics.</p>
                         </div>
                     </div>
-                    <div class="tutor">
-                        <img src="https://yt3.googleusercontent.com/ytc/AIdro_lD6K9DGGqWttThktCDttOdlHIHWZQ7Gcdd9WRSEqYUxw=s160-c-k-c0x00ffffff-no-rj" alt="Tutor 4">
+                    <div class="tutor card">
+                        <img src="https://yt3.googleusercontent.com/ytc/AIdro_lD6K9DGGqWttThktCDttOdlHIHWZQ7Gcdd9WRSEqYUxw=s160-c-k-c0x00ffffff-no-rj"  class="card" alt="Tutor 4">
                         <div class="info">
                             <a href="https://www.youtube.com/@coreyms" target="_blank">Corey Schafer</a>
                             <p> His depth of knowledge, clear explanations, and practical approach have made learning Python especially pandas, matplotlib, OOP, and Git much more engaging and effective. </p>
                         </div>
                     </div>
-                    <div class="tutor">
-                        <img src="https://yt3.googleusercontent.com/4MXG0CX0hBid4xMFasQ2WIaqu-zA8kD927FC-BrTCvrhWCKYP4j3F00QGDzgaYDDlJcwDIJ_uFc=s176-c-k-c0x00ffffff-no-rj-mo" alt="Tutor 6">
+                    <div class="tutor card">
+                        <img src="https://yt3.googleusercontent.com/4MXG0CX0hBid4xMFasQ2WIaqu-zA8kD927FC-BrTCvrhWCKYP4j3F00QGDzgaYDDlJcwDIJ_uFc=s176-c-k-c0x00ffffff-no-rj-mo"  class="card" alt="Tutor 6">
                         <div class="info">
                             <a href="https://www.youtube.com/@zedstatistics" target="_blank">Justin Zeltzer</a>
                             <p>Justin Zeltzer’s playlists on regression and hypothesis testing are outstanding. His slow-paced, methodical approach ensures that even complex topics are easy to grasp without ever feeling overwhelming..</p>
                         </div>
                     </div>
-                    <div class="tutor">
-                        <img src="https://yt3.googleusercontent.com/ytc/AIdro_l9wLnClpLKJeVmP5XwHy4NF_Gu13GfyRT1WTZDaSYS-g=s176-c-k-c0x00ffffff-no-rj-mo" alt="Tutor 6">
+                    <div class="tutor card">
+                        <img src="https://yt3.googleusercontent.com/ytc/AIdro_l9wLnClpLKJeVmP5XwHy4NF_Gu13GfyRT1WTZDaSYS-g=s176-c-k-c0x00ffffff-no-rj-mo" class="card"  alt="Tutor 6">
                         <div class="info">
                             <a href="https://www.youtube.com/@AlexTheAnalyst" target="_blank">Alex Freberg</a>
                             <p> Renowned for his practical, guided tutorials that make learning data analysis accessible and straightforward. His non-clickbaity approach ensures that the content is genuine and valuable, all offered for free.</p>
                         </div>
                     </div>
-                    <div class="tutor">
-                        <img src="https://yt3.googleusercontent.com/ytc/AIdro_my6YXWfudW8qM_i1Na9IWEbiIUtVgb54u0XVVmtlYQig=s176-c-k-c0x00ffffff-no-rj-mo" alt="Tutor 5">
+                    <div class="tutor card">
+                        <img src="https://yt3.googleusercontent.com/ytc/AIdro_my6YXWfudW8qM_i1Na9IWEbiIUtVgb54u0XVVmtlYQig=s176-c-k-c0x00ffffff-no-rj-mo" class="card" alt="Tutor 5">
                         <div class="info">
                             <a href="https://www.youtube.com/c/lukebarousse" target="_blank"> Luke Barousse</a>
                             <p>Luke Barousse's website, data.tech, and his guidance on data career trends are invaluable resources. His overall career advice and practical insights into data analytics make his content highly beneficial.</p>
                         </div>
                     </div>
-                    <div class="tutor">
-                        <img src="https://yt3.googleusercontent.com/f5KATVWLj93qFoAlgXX7rfFmRAULftwRw7AW3-FwqNtXOkKSm6DKKbR4ClSAjnMOikxnWXvaBg=s176-c-k-c0x00ffffff-no-rj-mo" alt="Tutor 6">
+                    <div class="tutor card">
+                        <img src="https://yt3.googleusercontent.com/f5KATVWLj93qFoAlgXX7rfFmRAULftwRw7AW3-FwqNtXOkKSm6DKKbR4ClSAjnMOikxnWXvaBg=s176-c-k-c0x00ffffff-no-rj-mo" class="card" alt="Tutor 6">
                         <div class="info">
                             <a href="https://www.youtube.com/@robmulla/featured" target="_blank">Rob Mulla</a>
                             <p>  His videos are a fantastic blend of practical tutorials, short concept-focused lessons, and live coding streams. By showcasing the latest technologies and exploring diverse topics, Rob sparks curiosity and keeps learning engaging and up-to-date. </p>
