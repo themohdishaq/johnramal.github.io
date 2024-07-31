@@ -5,6 +5,7 @@
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
       <link rel="stylesheet" href="assets/css/main.css" />
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
       <noscript>
          <link rel="stylesheet" href="assets/css/noscript.css" />
       </noscript>
@@ -112,8 +113,8 @@
                </div>
             </div>
             <div class="card">
-               <h2 style="text-align: center;">عرض کیا ہے</h2>
-               <div id="couplets"></div>
+               <h2 style="text-align: center; font-size: 2.1rem;" class="urdu-text">عرض کیا ہے</h2>
+               <div id="couplets" class="urdu-text"></div>
                <div class="actions">
                   <a href="#" id="prevCouplet" class="button">&lt Previous</a>
                   <a href="#" id="nextCouplet" class="button">Next &gt</a>
@@ -121,9 +122,9 @@
             </div>
             <!-- Couplet Explanation Modals -->
             <div id="coupletModal" class="modal">
-               <div class="modal-content">
+               <div class="modal-content urdu-text">
                   <span class="close">&times;</span>
-                  <h2>Couplet Explanation</h2>
+                  <h2> Explanation</h2>
                   <p id="coupletExplanation"></p>
                </div>
             </div>

@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', function() {
         coupletsContainer.innerHTML = `
             <div class="couplet active">
                 <blockquote>${couplet.text}</blockquote>
-                <p><em>- ${couplet.author}</em></p>
                 <a href="#" class="button explainCouplet" data-couplet="${index}">Explain</a>
             </div>
         `;

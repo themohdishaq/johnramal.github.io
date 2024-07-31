@@ -4964,3 +4964,10 @@ input, select, textarea {
 .explain-button:hover {
     background-color: #555;
 }
+/* Urdu Text Styling */
+.urdu-text {
+    font-family: 'Noto Nastaliq Urdu', 'Arial', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.5;
+    padding: 10px;
+}
