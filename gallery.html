@@ -157,6 +157,16 @@
                         <img src="images/landscape4.jpeg" alt="Landscape 2" />
                         </a>
                      </div>
+                     <div class="col-4">
+                        <a href="images/pindi.jpeg" data-lightbox="landscape" data-title="Landscape 2" class="thumbnail">
+                        <img src="images/pindi.jpeg" alt="Landscape 2" />
+                        </a>
+                     </div>
+                     <div class="col-4">
+                        <a href="images/pindi2.jpeg" data-lightbox="landscape" data-title="Landscape 2" class="thumbnail">
+                        <img src="images/pindi2.jpeg" alt="Landscape 2" />
+                        </a>
+                     </div>
                      <!-- Repeat as needed -->
                   </div>
                </div>
@@ -173,8 +183,6 @@
                         <img src="images/chhish4.jpg" alt="Moon 2" />
                         </a>
                      </div>
-
-                     
                      <!-- Repeat as needed -->
                   </div>
                </div>
@@ -244,49 +252,36 @@
                      <!-- Repeat as needed -->
                   </div>
                </div>
-               <h2  style="text-align: center; background-color: rgb(199, 226, 226);" class="card  urdu-text">پنڈی</h2>
-               <div class="box alt">
-                  <div class="row gtr-50 gtr-uniform">
-                     <!-- Add your moon images here -->
-                     <div class="col-4">
-                        <a href="images/pindi.jpeg" data-lightbox="beeshkar" data-title="moon" class="thumbnail">
-                        <img src="images/pindi.jpeg" alt="moon" />
-                        </a>
-                     </div>
-                     <div class="col-4">
-                        <a href="images/pindi2.jpeg" data-lightbox="beeshkar" data-title="moon" class="thumbnail">
-                        <img src="images/pindi2.jpeg" alt="moon" />
-                        </a>
-                     </div>
-                     <!-- Repeat as needed -->
-                  </div>
-               </div>
             </section>
          </div>
          <!-- Footer -->
          <footer id="footer">
             <section>
-               <form method="post" action="https://johnramal-github-io-1.onrender.com/send">
-                  <input type="hidden" name="redirect_url" value="{{ request.url }}" />
-                  <div class="fields">
-                     <p class="warning">Please note: Backend is not currently set up to receive anonymous messages. Please check back later or contact via email or phone. <br> Want to find out who is responsible <a href="team.html">click here</a></p>
-                     <div class="field">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name" placeholder="Name (optional)" class="small-placeholder" />
-                     </div>
-                     <div class="field">
-                        <label for="email">Email</label>
-                        <input type="text" name="email" id="email" placeholder="Email (optional)" class="small-placeholder" />
-                     </div>
-                     <div class="field">
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" rows="3"></textarea>
-                     </div>
+               <div class="fields">
+                  <p class="warning">Please note: Backend is not currently set up to receive anonymous messages. Please check back later or contact via email or phone. <br> Want to find out who is responsible <a href="team.html">click here</a></p>
+                  <div class="field">
+                     <label for="name">Name</label>
+                     <input type="text" name="name" id="name" placeholder="Name (optional)" class="small-placeholder" />
                   </div>
-                  <ul class="actions">
-                     <li><input type="submit" value="Send Message" /></li>
-                  </ul>
-               </form>
+                  <div class="field">
+                     <label for="email">Email</label>
+                     <input type="text" name="email" id="email" placeholder="Email (optional)" class="small-placeholder" />
+                  </div>
+                  <div class="field">
+                     <label for="message">Message</label>
+                     <textarea name="message" id="message" rows="3"></textarea>
+                  </div>
+               </div>
+               <ul class="actions">
+                  <li><input type="submit" value="Anonymous Message" id="submit-btn" /></li>
+               </ul>
+               <script>
+                  document.getElementById("submit-btn").addEventListener("click", function(event){
+                      event.preventDefault(); // Prevent the default form submission
+                      alert("Backend is not currently set up to receive anonymous messages.\nWant to meet who is responsible? ");
+                      window.location.href = "team.html"; // Redirect to the team page
+                  });
+               </script>
             </section>
             <section class="split contact">
                <section class="alt">

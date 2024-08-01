@@ -186,56 +186,62 @@
                   </tbody>
                </table>
             </div>
-            <!-- Footer -->
-            <footer id="footer">
-               <section>
-                  <form method="post" action="https://johnramal-github-io-1.onrender.com/send">
-                     <input type="hidden" name="redirect_url" value="{{ request.url }}" />
-                     <div class="fields">
-                        <p class="warning">Please note: Backend is not currently set up to receive anonymous messages. Please check back later or contact via email or phone. <br> Want to find out who is responsible <a href="team.html">click here</a></p>
-                        <div class="field">
-                           <label for="name">Name</label>
-                           <input type="text" name="name" id="name" placeholder="Name (optional)" class="small-placeholder" />
-                        </div>
-                        <div class="field">
-                           <label for="email">Email</label>
-                           <input type="text" name="email" id="email" placeholder="Email (optional)" class="small-placeholder" />
-                        </div>
-                        <div class="field">
-                           <label for="message">Message</label>
-                           <textarea name="message" id="message" rows="3"></textarea>
-                        </div>
-                     </div>
-                     <ul class="actions">
-                        <li><input type="submit" value="Send Message" /></li>
-                     </ul>
-                  </form>
-               </section>
-               <section class="split contact">
-                  <section class="alt">
-                     <h3>Address</h3>
-                     <p>Hirissh, Ganish, P/O Karimabad, Tehsil Aliabad, District Hunza, Gilgit-Baltistan, Pakistan, Asia, Earth, Solar System, Milky Way Galaxy, Local Group, Virgo Supercluster, Observable Universe.</p>
-                  </section>
-                  <section>
-                     <h3>WhatsApp</h3>
-                     <p><a href="https://wa.me/923155282187">Chat with me on WhatsApp</a></p>
-                  </section>
-                  <section>
-                     <h3>Email</h3>
-                     <p><a href="mailto:johnailia51@gmail.com">johnailia51@gmail.com</a></p>
-                  </section>
-                  <section>
-                     <h3>Social</h3>
-                     <ul class="icons alt">
-                        <li><a href="https://www.linkedin.com/in/johnramal" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkdIn</span></a></li>
-                        <li><a href="https://www.instagram.com/johnailiaramal/" target="_blank" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-                        <li><a href="https://github.com/johnramal" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-                        <li><a href="https://www.datacamp.com/portfolio/johnailia51" target="_blank"  class="no-underline">DataCamp</a></li>
-                     </ul>
-                  </section>
-               </section>
-            </footer>
          </div>
+         <!-- Footer -->
+         <footer id="footer">
+            <section>
+               <div class="fields">
+                  <p class="warning">Please note: Backend is not currently set up to receive anonymous messages. Please check back later or contact via email or phone. <br> Want to find out who is responsible <a href="team.html">click here</a></p>
+                  <div class="field">
+                     <label for="name">Name</label>
+                     <input type="text" name="name" id="name" placeholder="Name (optional)" class="small-placeholder" />
+                  </div>
+                  <div class="field">
+                     <label for="email">Email</label>
+                     <input type="text" name="email" id="email" placeholder="Email (optional)" class="small-placeholder" />
+                  </div>
+                  <div class="field">
+                     <label for="message">Message</label>
+                     <textarea name="message" id="message" rows="3"></textarea>
+                  </div>
+               </div>
+               <ul class="actions">
+                  <li><input type="submit" value="Anonymous Message" id="submit-btn" /></li>
+               </ul>
+               <script>
+                  document.getElementById("submit-btn").addEventListener("click", function(event){
+                      event.preventDefault(); // Prevent the default form submission
+                      alert("Backend is not currently set up to receive anonymous messages.\nWant to meet who is responsible? ");
+                      window.location.href = "team.html"; // Redirect to the team page
+                  });
+               </script>
+            </section>
+            <section class="split contact">
+               <section class="alt">
+                  <h3>Address</h3>
+                  <p>Hirissh, Ganish, P/O Karimabad, Tehsil Aliabad, District Hunza, Gilgit-Baltistan, 
+                     Pakistan, Asia, Earth, Solar System, Milky Way Galaxy, Local Group, Virgo Supercluster, Observable Universe.
+                  </p>
+               </section>
+               <section>
+                  <h3>WhatsApp</h3>
+                  <p><a href="https://wa.me/923155282187">Chat with me on WhatsApp</a></p>
+               </section>
+               <section>
+                  <h3>Email</h3>
+                  <p><a href="mailto:johnailia51@gmail.com">johnailia51@gmail.com</a></p>
+               </section>
+               <section>
+                  <h3>Social</h3>
+                  <ul class="icons alt">
+                     <li><a href="https://www.linkedin.com/in/johnramal" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                     <li><a href="https://www.instagram.com/johnailiaramal/" target="_blank" class="icon brands alt fa-instagram"><span class="label">Instagram"></span></a></li>
+                     <li><a href="https://github.com/johnramal" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub"></span></a></li>
+                     <li><a href="https://www.datacamp.com/portfolio/johnailia51" target="_blank"  class="no-underline">DataCamp</a></li>
+                  </ul>
+               </section>
+            </section>
+         </footer>
          <!-- Copyright -->
          <div id="copyright">
             <ul>
