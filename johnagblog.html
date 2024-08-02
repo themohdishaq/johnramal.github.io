@@ -66,6 +66,15 @@
          text-decoration: none;
          cursor: pointer;
          }
+         .rating-container {
+         display: flex;
+         align-items: center;
+         margin-top: 10px;
+         }
+         .star-rating {
+         font-size: 24px;
+         margin-right: 10px;
+         }
       </style>
    </head>
    <body class="is-preload">
@@ -108,32 +117,38 @@
                </ul>
             </div>
             <hr />
-            <div class="card">
-               <h2>Anthropocene Reviewed</h2>
-               <div id="anthropoceneTopics"></div>
-               <div class="actions">
-                  <a href="#" id="prevTopic" class="button"> &lt Previous</a>
-                  <a href="#" id="nextTopic" class="button">Next &gt</a>
+            <div class="container">
+               <div class="card">
+                  <h2>Anthropocene Reviewed</h2>
+                  <div id="anthropoceneTopics"></div>
+                  <div class="actions">
+                     <a href="#" id="prevTopic" class="button">&lt; Previous</a>
+                     <a href="#" id="nextTopic" class="button">Next &gt;</a>
+                  </div>
                </div>
-            </div>
-            <div class="card">
-               <h2 style="text-align: center; font-size: 2.1rem;" class="urdu-text">عرض کیا ہے</h2>
-               <div id="couplets" class="urdu-text"></div>
-               <div class="actions">
-                  <a href="#" id="prevCouplet" class="button">&lt Previous</a>
-                  <a href="#" id="nextCouplet" class="button">Next &gt</a>
+               <div id="ratingModal" class="modal">
+                  <div class="modal-content">
+                     <span class="close">&times;</span>
+                     <h2>Stellar Scale</h2>
+                     <div id="ratingScale"></div>
+                  </div>
                </div>
-            </div>
-            <!-- Couplet Explanation Modals -->
-            <div id="coupletModal" class="modal">
-               <div class="modal-content urdu-text">
-                  <span class="close">&times;</span>
-                  <h2> Explanation</h2>
-                  <p id="coupletExplanation"></p>
+               <div class="card">
+                  <h2 style="text-align: center; font-size: 2.1rem;" class="urdu-text">عرض کیا ہے</h2>
+                  <div id="couplets" class="urdu-text"></div>
+                  <div class="actions">
+                     <a href="#" id="prevCouplet" class="button">&lt Previous</a>
+                     <a href="#" id="nextCouplet" class="button">Next &gt</a>
+                  </div>
                </div>
-            </div>
-            <hr>
-            <div >
+               <!-- Couplet Explanation Modal -->
+               <div id="coupletModal" class="modal">
+                  <div class="modal-content urdu-text">
+                     <span class="close">&times;</span>
+                     <h2>Explanation</h2>
+                     <p id="coupletExplanation"></p>
+                  </div>
+               </div>
                <h2>Last Five</h2>
                <div class="row">
                   <div class="col-4 section books">
