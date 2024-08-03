@@ -42,8 +42,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const topicsContainer = document.getElementById('anthropoceneTopics');
         const topic = anthropoceneTopics[index];
         topicsContainer.innerHTML = `
-            <div class="topic active">
-                <h3>${topic.title}</h3>
+              <div class="topic active">
+                <h3 style="text-align: center;">${topic.index}. ${topic.title}</h3>
+                <p style="text-align: center;"><strong>${topic.headline}</strong></p>
                 <p>${topic.content}</p>
                 <div class="rating-container">
                     <span class="star-rating">${createStarRating(topic.rating)}</span>
@@ -78,6 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const couplet = couplets[index];
         coupletsContainer.innerHTML = `
             <div class="couplet active">
+                <h6>${couplet.index}</h6>
                 <blockquote>${couplet.text}</blockquote>
                 <a href="#" style="
                     font-size: 0.7rem; /* Match font-size */
